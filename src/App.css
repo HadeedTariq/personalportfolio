@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app{
+  display: flex;
+  background-color: rgb(8,8,25);
+  transition: 0.5s;
+  /* top: 0; */
+}
