@@ -1,6 +1,6 @@
 .project{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 40px 0; 
 }
@@ -11,10 +11,21 @@
 }
 .project-changer{
     margin: 50px 10px;
+    display: flex;
+    justify-content: center;
 }
-.project-changer select{
-    border: none;
+.project-changer button{
     padding: 5px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    background-color: rgb(127, 53, 238);
+    color: aliceblue;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.project-changer button:hover{
+    background-color: #4f2cdc;
 }
 .project-content{
     display: flex;

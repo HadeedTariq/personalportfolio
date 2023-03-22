@@ -3,13 +3,15 @@ import '../Css/Projects.css'
 import { ProjectsContent,ProjectData } from '../constants'
 function Projects() {
   const [project,setProject]=useState(ProjectData)
+  const [basic,setBasic]=useState(true)
+  const projectSort=()=>{
+    setBasic((prev)=>!prev)
+    setProject(ProjectData.reverse())
+  }
   return (
     <>
     <div className="project-changer">
-      <select>
-        <option>Basic</option>
-        <option>advanced</option>
-      </select>
+      <button onClick={projectSort}>{basic?"Basic":"Advanced"}</button>
     </div>
     
     <div className="project">
